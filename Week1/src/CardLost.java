@@ -16,6 +16,14 @@ public class CardLost extends Lost {
     private String uInformation;
 
 
+    @Override
+    public String toString() {
+        return "CardLost{" +
+                "uid=" + uid +
+                ", registerTime=" + registerTime +
+                ", uInformation='" + uInformation + '\'' +
+                '}';
+    }
 
     public CardLost() {
     }

@@ -9,26 +9,27 @@ import java.util.Date;
  **/
 
 public class main {
+
     public static void main(String[] args) {
-        searchTest();//排序
-        sortTest();//查找
+        sortTest();//排序
+        searchTest();//查找
     }
 
     /**
      * 检索测试
      */
     private static void searchTest() {
-        Lost book1 = new BookLost(100,"name1","yxyl");
-        book1.setLocation("浙江");
-        Lost book2 = new BookLost(200,"name2","yxyl");
-        book2.setLocation("医科");
-        Lost book3 = new BookLost(300,"name3","yxyl");
-        book3.setLocation("邮专");
-        Lost book4 = new BookLost(400,"name4","yxyl");
-        book4.setLocation("浙江");
+        Lost card1 = new CardLost(001, new Date(), "yxyl");
+        card1.setLocation("浙江");
+        Lost card2 = new CardLost(002, new Date(), "yxyl");
+        card2.setLocation("医科");
+        Lost card3 = new CardLost(003, new Date(), "yxyl");
+        card3.setLocation("邮专");
+        Lost card4 = new CardLost(004, new Date(), "yxyl");
+        card4.setLocation("浙江");
 
 
-        Lost[] losts = LostUtil.selectByKeyword(new Lost[]{book1,book2,book3,book4}, "浙江");
+        Lost[] losts = LostUtil.selectByKeyword(new Lost[]{card1, card2, card3, card4}, "浙江");
         for (Lost lost : losts) {
             if (lost != null) {
                 System.out.println(lost.toString());
@@ -46,12 +47,12 @@ public class main {
 
         for (int i = 0; i < 10; i++) {
             Lost book = new BookLost();
-            book.setLostTime(LostUtil.randomDate("1990-01-01", sdf.format(new Date())));
+            book.setLostTime(LostUtil.randomDate("1660-01-01", sdf.format(new Date())));
             losts[i] = book;
         }
         LostUtil.sortLost(losts);
         for (int i = 0; i < losts.length; i++) {
-            System.out.println(losts[i]);
+            System.out.println(losts[i].toString());
         }
     }
 }

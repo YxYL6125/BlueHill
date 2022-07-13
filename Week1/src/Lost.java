@@ -15,6 +15,16 @@ public abstract class Lost {
     private String user;
     private String location;
 
+    @Override
+    public String toString() {
+        return "Lost{" +
+                "getTime=" + getTime +
+                ", lostTime=" + lostTime +
+                ", user='" + user + '\'' +
+                ", location='" + location + '\'' +
+                '}';
+    }
+
     public String getLocation() {
         return location;
     }

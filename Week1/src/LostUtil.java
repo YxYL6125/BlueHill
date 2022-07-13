@@ -24,7 +24,19 @@ public class LostUtil {
             list.add(lostArray[i].getLostTime());
         }
 
-        Collections.sort(list);
+//        Collections.sort(list);
+
+        Date temp = null;
+        for (int i = 0; i < list.size(); i++) {
+            for (int j = 0; j < list.size() - i - 1; j++) {
+                if (list.get(j).getTime() < list.get(j + 1).getTime()) {
+                    temp = list.get(j);
+                    list.set(j + 1, temp);
+                    list.set(j, list.get(j + 1));
+                }
+            }
+        }
+
         for (int i = 0; i < lostArray.length; i++) {
             lostArray[i].setLostTime(list.get(i));
         }

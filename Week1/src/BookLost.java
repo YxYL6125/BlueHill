@@ -11,14 +11,6 @@ public class BookLost extends Lost {
     private String name;
     private String writer;
 
-    @Override
-    public String toString() {
-        return "BookLost{" +
-                "price=" + price +
-                ", name='" + name + '\'' +
-                ", writer='" + writer + '\'' +
-                '}';
-    }
 
     public BookLost() {
     }
