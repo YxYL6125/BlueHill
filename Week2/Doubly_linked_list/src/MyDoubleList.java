@@ -150,12 +150,11 @@ public class MyDoubleList<T> {
         Node reserveHead = new Node();
         while (temp != null) {
             next = temp.getNextNode();
-            //冒泡老朋友了
             temp.setNextNode(reserveHead.getNextNode());
             reserveHead.setNextNode(temp);
             temp = next;
         }
-        head.setNextNode(reserveHead.getNextNode());//还是老冒泡好用啊
+        head.setNextNode(reserveHead.getNextNode());//排序
 
     }
 
