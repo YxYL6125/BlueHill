@@ -5,9 +5,11 @@
       <module fileurl="file://$PROJECT_DIR$/Week2/Calculator/Calculator.iml" filepath="$PROJECT_DIR$/Week2/Calculator/Calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week2/Doubly_linked_list/Doubly_linked_list.iml" filepath="$PROJECT_DIR$/Week2/Doubly_linked_list/Doubly_linked_list.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week2/NumbersSplitting/NumbersSplitting.iml" filepath="$PROJECT_DIR$/Week2/NumbersSplitting/NumbersSplitting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week3/ThunderFighter/ThunderFighter.iml" filepath="$PROJECT_DIR$/Week3/ThunderFighter/ThunderFighter.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week1/Week1.iml" filepath="$PROJECT_DIR$/Week1/Week1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week2/Week2.iml" filepath="$PROJECT_DIR$/Week2/Week2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week3/Week3.iml" filepath="$PROJECT_DIR$/Week3/Week3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week3/time-needed-to-buy-tickets/time-needed-to-buy-tickets.iml" filepath="$PROJECT_DIR$/Week3/time-needed-to-buy-tickets/time-needed-to-buy-tickets.iml" />
     </modules>
   </component>
 </project>
